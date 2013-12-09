@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "Marker",
+    "description": "Bookmark manager for Chrome.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "placeholder.png",
+        "default_popup": "placeholder.html"
+    },
+    "permissions": [
+        "bookmarks"
+    ]
+}
