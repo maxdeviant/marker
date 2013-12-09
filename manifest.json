@@ -7,7 +7,7 @@
 
     "browser_action": {
         "default_icon": "placeholder.png",
-        "default_popup": "placeholder.html"
+        "default_popup": "popup.html"
     },
     "permissions": [
         "bookmarks"
