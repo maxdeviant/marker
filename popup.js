@@ -1,16 +1,18 @@
 var marker = {
-	bookmark: function(title, url) {
-		console.log(title, url);
-		// chrome.bookmarks.create({
-		// 	'parentId': extensionsFolderId,
-		// 	'title': title,
-		// 	'url': url
-		// });
+	add: function(title, url) {
+		chrome.bookmarks.create({
+			// 'parentId': bookmarkBar.id,
+			'title': title,
+			'url': url
+		});
+	},
+	list: function() {
+
 	}
 };
 
 $(document).ready(function() {
 	$('#add').click(function() {
-		marker.bookmark($('#title').val(), $('#url').val());
+		marker.add($('#title').val(), $('#url').val());
 	});
 });
